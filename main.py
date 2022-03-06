@@ -24,7 +24,7 @@ kilometer.grid(column=2, row=2, sticky='W')
 def cal():
     km = input1.get()
     res = float(km) * 1.6093
-    m.config(text=res)
+    m.config(text=round(res, 2))
 
 calculate = Button(text='Calculate', command=cal)
 calculate.grid(column=1, row=3)
